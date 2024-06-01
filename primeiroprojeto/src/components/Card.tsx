@@ -8,8 +8,8 @@ interface CardProps {
 export default function Card(props: CardProps) {
   return (
     <div
-      className={`flex flex-col border ${
-        props.desconto > 0 ? "border-red-700" : "border-green-700"
+      className={`flex justify-center flex-col border-2 ${
+        props.desconto > 0 ? "border-red-700" : "border-blue-700"
       } rounded-sm p-1`}
     >
       <p>Produto: {props.produto}</p>
