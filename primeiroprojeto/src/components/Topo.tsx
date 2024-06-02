@@ -23,7 +23,14 @@ export default function Topo() {
             <Link href={"/"}>Página Inicial</Link>
           </li>
           <li>
-            <Link href={"/produtos/produtos"}>Produtos</Link>
+            <Link
+              href={{
+                pathname: "/produtos/produtos",
+                query: { nome: "Alex" },
+              }}
+            >
+              Produtos
+            </Link>
           </li>
           <li>
             <Link href={"/teste/teste"}>Teste</Link>
