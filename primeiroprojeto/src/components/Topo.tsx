@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Topo() {
   return (
     <>
-      <ul className="flex flex-col justify-between items-center bg-zinc-300 h-auto p-5">
+      <ul className="flex justify-between items-center bg-zinc-300 h-auto p-5">
         <li>
           <Image
             src="/AF-logo.png"
@@ -14,11 +14,7 @@ export default function Topo() {
             className="rounded-full"
           />
         </li>
-        <ul className="flex flex-col">
-          <li className="subtitle">Alex Filho</li>
-          <li>Desenvolvedor</li>
-        </ul>
-        <ul>
+        <ul className="flex gap-2">
           <li>
             <Link href={"/"}>Página Inicial</Link>
           </li>
@@ -34,6 +30,12 @@ export default function Topo() {
           </li>
           <li>
             <Link href={"/teste/teste"}>Teste</Link>
+          </li>
+          <li>
+            <Link href={"/usestate/usestate"}>UseState</Link>
+          </li>
+          <li>
+            <Link href={"/inputs/inputs"}>Inputs</Link>
           </li>
         </ul>
       </ul>
