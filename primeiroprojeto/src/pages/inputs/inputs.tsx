@@ -3,6 +3,9 @@ import { useState } from "react";
 export default function Inputs() {
   const [nome, setNome] = useState<string>("");
   const [email, setEmail] = useState<string>("");
+  const [selected, setSelected] = useState<string>("");
+
+  const options = ["Opção 1", "Opção 2", "Opção 3"];
 
   return (
     <>
@@ -18,6 +21,22 @@ export default function Inputs() {
             value={nome}
             onChange={(e) => setNome(e.target.value)}
           />
+          <div className="flex flex-col text-center gap-2">
+            <label htmlFor="opcoes">Opções:</label>
+            <select
+              className="border-2 border-zinc-500 rounded px-2 py-1"
+              value={selected}
+              onChange={(e) => setSelected(e.target.value)}
+              name="opcoes"
+            >
+              <option value="main">Selecione uma opção</option>
+              {options.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </div>
           <input
             type="email"
             placeholder="Digite seu e-mail"
