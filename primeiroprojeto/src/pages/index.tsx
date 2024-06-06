@@ -3,7 +3,7 @@
 // const inter = Inter({ subsets: ["latin"] });
 import Topo from "@/components/Topo";
 import Card from "@/components/Card";
-import Produtos from "./produtos/produtos";
+import Produtos from "./produtos";
 
 const nome = "Alex";
 const profissao = "Desenvolvedor";

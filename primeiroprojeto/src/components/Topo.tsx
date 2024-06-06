@@ -21,7 +21,7 @@ export default function Topo() {
           <li>
             <Link
               href={{
-                pathname: "/produtos/produtos",
+                pathname: "/produtos",
                 query: { nome: "Alex" },
               }}
             >
@@ -29,13 +29,13 @@ export default function Topo() {
             </Link>
           </li>
           <li>
-            <Link href={"/teste/teste"}>Teste</Link>
+            <Link href={"/usestate"}>UseState</Link>
           </li>
           <li>
-            <Link href={"/usestate/usestate"}>UseState</Link>
+            <Link href={"/inputs"}>Inputs</Link>
           </li>
           <li>
-            <Link href={"/inputs/inputs"}>Inputs</Link>
+            <Link href={"/useeffect"}>UseEffect</Link>
           </li>
         </ul>
       </ul>
