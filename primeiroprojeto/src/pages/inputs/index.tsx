@@ -1,3 +1,4 @@
+import Topo from "@/components/Topo";
 import { useState } from "react";
 
 export default function Inputs() {
@@ -9,6 +10,7 @@ export default function Inputs() {
 
   return (
     <>
+      <Topo />
       <div>
         <h1 className="text-2xl md:text-3xl font-bold text-center text-zinc-700 mb-2">
           Inputs
