@@ -40,6 +40,9 @@ export default function Topo() {
           <li>
             <Link href={"/react-select"}>React Select</Link>
           </li>
+          <li>
+            <Link href={"/fetch"}>Fetch</Link>
+          </li>
         </ul>
       </ul>
       <div></div>

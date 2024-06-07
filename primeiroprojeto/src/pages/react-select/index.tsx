@@ -1,3 +1,4 @@
+import Topo from "@/components/Topo";
 import Select from "react-select";
 import AsyncSelect from "react-select/async";
 
@@ -24,6 +25,7 @@ export default function ReactSelect() {
 
   return (
     <>
+      <Topo />
       <div className="mb-3">
         <Select
           placeholder="Selecione uma opção"
