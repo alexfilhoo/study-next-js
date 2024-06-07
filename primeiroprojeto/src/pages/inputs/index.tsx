@@ -1,5 +1,6 @@
 import Topo from "@/components/Topo";
 import { useState } from "react";
+import Globais from "@/components/Globais";
 
 export default function Inputs() {
   const [nome, setNome] = useState<string>("");
@@ -87,6 +88,9 @@ export default function Inputs() {
           <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
             Enviar
           </button>
+          <p>Nome: {Globais.nome}</p>
+          <p>Profissão: {Globais.profissao}</p>
+          <p>Idade: {Globais.idade}</p>
         </div>
       </div>
     </>
