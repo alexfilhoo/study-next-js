@@ -1,6 +1,6 @@
 import React from "react";
 import { PokemonDetail } from "../interface";
-import PokemonList from "./PokemonList";
+import PokemonList from "./PokemonRow";
 import "./pokemon.css";
 import { Detail } from "../App";
 
@@ -10,7 +10,7 @@ interface Props {
   setDetail: React.Dispatch<React.SetStateAction<Detail>>;
 }
 
-const PokemonCollection: React.FC<Props> = (props) => {
+const PokemonCard: React.FC<Props> = (props) => {
   const { pokemon, viewDetail, setDetail } = props;
   const selectPokemon = (id: number) => {
     if (!viewDetail.isOpened) {
@@ -52,4 +52,4 @@ const PokemonCollection: React.FC<Props> = (props) => {
   );
 };
 
-export default PokemonCollection;
+export default PokemonCard;

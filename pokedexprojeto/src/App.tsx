@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import axios from "axios";
-import PokemonCollection from "./components/PokemonCollection";
 import { Pokemon } from "./interface";
+import PokemonCard from "./components/PokemonCard";
 
 interface Pokemons {
   name: string;
@@ -26,7 +26,7 @@ const App: React.FC = () => {
   useEffect(() => {
     const getPokemon = async () => {
       const response = await axios.get(
-        "https://pokeapi.co/api/v2/pokemon?limit=20&offset=20"
+        "https://pokeapi.co/api/v2/pokemon?limit=20&offset=0"
       );
       setNextUrl(response.data.next);
 
@@ -62,8 +62,8 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <div className="container">
-        <header className="pokemon-header">Pokemon</header>
-        <PokemonCollection
+        <img src="./logoPokemon.png" className="pokemon-logo"/>
+        <PokemonCard
           pokemon={pokemon}
           viewDetail={viewDetail}
           setDetail={setDetail}

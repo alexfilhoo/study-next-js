@@ -1,3 +1,5 @@
+import { Ability } from "./components/PokemonRow";
+
 export interface Pokemon {
   id: number;
   name: string;
@@ -7,8 +9,5 @@ export interface Pokemon {
 }
 
 export interface PokemonDetail extends Pokemon {
-  abilities?: {
-    ability: string;
-    name: string;
-  }[];
+  abilities?: Ability[];
 }
