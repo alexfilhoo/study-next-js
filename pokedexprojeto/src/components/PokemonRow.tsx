@@ -6,7 +6,7 @@ export type Ability = {
   ability: string;
   name: string;
   url: string;
-}
+};
 
 interface Props {
   viewDetail: Detail;
@@ -30,8 +30,8 @@ const PokemonRow: React.FC<Props> = (props) => {
   };
 
   useEffect(() => {
-    console.log(abilities)
-  })
+    console.log(abilities);
+  });
 
   return (
     <div>
@@ -43,19 +43,21 @@ const PokemonRow: React.FC<Props> = (props) => {
             </p>
             <div className="detail-info">
               <img src={image} alt="pokemon" className="detail-img" />
+            </div>
+            <div>
               <p className="detail-name">{name}</p>
             </div>
             <div className="detail-skill">
-              <p className="detail-ability">
-                Golpes:{" "}
+              <div className="detail-ability">
+                <p>Golpes:</p>
                 {abilities?.map((abilit: any) => {
                   return (
-                  <div className="golpes">
-                    <p className="detail-ability">{abilit.ability.name}</p>
-                  </div>
-                  )
+                    <div className="golpes">
+                      <p className="detail-ability">{abilit.ability.name}</p>
+                    </div>
+                  );
                 })}
-              </p>
+              </div>
             </div>
           </div>
         </div>
