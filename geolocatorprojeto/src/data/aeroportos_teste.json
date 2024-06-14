@@ -1,0 +1,112 @@
+[
+  {
+    "key": "1",
+    "code": "AAA",
+    "lat": -17.35479,
+    "lng": -145.50922,
+    "name": "Aeroporto de Anaa",
+    "city": "Anaa",
+    "state": "Tuamotu-Gambier",
+    "country": "Polinésia Francesa"
+  },
+  {
+    "key": "2",
+    "code": "AAE",
+    "lat": 36.8236,
+    "lng": 7.8103,
+    "name": "Aeroporto El Mellah",
+    "city": "El Tarf",
+    "state": "Annaba",
+    "country": "Argélia"
+  },
+  {
+    "key": "3",
+    "code": "AAL",
+    "lat": 57.0952,
+    "lng": 9.85606,
+    "name": "Aeroporto de Aalborg",
+    "city": "Norresundby",
+    "state": "Nordjylland",
+    "country": "Dinamarca"
+  },
+  {
+    "key": "4",
+    "code": "AAM",
+    "lat": -24.81195,
+    "lng": 31.54010,
+    "name": "Aeroporto de Mala Mala",
+    "city": "Mala Mala",
+    "state": "Mpumalanga",
+    "country": "África do Sul"
+  },
+  {
+    "key": "5",
+    "code": "AAN",
+    "lat": 24.25,
+    "lng": 55.75,
+    "name": "Aeroporto de Al-Ain",
+    "city": "Ayn al Faydah",
+    "state": "Abu Dhabi",
+    "country": "Emirados Árabes Unidos"
+  },
+  {
+    "key": "6",
+    "code": "AAQ",
+    "lat": 44.9,
+    "lng": 37.3167,
+    "name": "Aeroporto de Olkhovka",
+    "city": "Novorossiysk",
+    "state": "Krasnodarskiy Kray",
+    "country": "Rússia"
+  },
+  {
+    "key": "7",
+    "code": "AAR",
+    "lat": 56.3088,
+    "lng": 10.6154,
+    "name": "Aeroporto de Tirstrup",
+    "city": "Kolind",
+    "state": "Midtjylland",
+    "country": "Dinamarca"
+  },
+  {
+    "key": "8",
+    "code": "AAT",
+    "lat": 47.7406,
+    "lng": 88.0845,
+    "name": "Aeroporto de Altai",
+    "city": "Altay",
+    "state": "Xinjiang",
+    "country": "China"
+  },
+  {
+    "key": "9",
+    "code": "AAX",
+    "lat": -19.5603,
+    "lng": -46.9653,
+    "name": "Aeroporto Romeu Zuma",
+    "city": "Araxá",
+    "state": "Minas Gerais",
+    "country": "Brasil"
+  },
+  {
+    "key": "10",
+    "code": "AAY",
+    "lat": 16.1947,
+    "lng": 52.1694,
+    "name": "Aeroporto de Al Gaidah",
+    "city": "Al Ghaydah",
+    "state": "Hadramawt",
+    "country": "Iémen"
+  },
+  {
+    "key": "11",
+    "code": "YBZ",
+    "lat": 43.6382,
+    "lng": -79.3466,
+    "name": "Aeroporto do centro de Toronto",
+    "city": "Toronto",
+    "state": "Ontario",
+    "country": "Canadá"
+  }
+]
