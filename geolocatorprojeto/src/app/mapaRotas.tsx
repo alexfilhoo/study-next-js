@@ -6,6 +6,7 @@ import {
 } from "@vis.gl/react-google-maps";
 import { useEffect, useState } from "react";
 import "./mapaRotas.css";
+import Image from "next/image";
 
 export default function MapaRotas() {
   const position = { lat: -30.02968, lng: -51.23412 };
@@ -36,6 +37,7 @@ function Directions() {
   const [routeIndex, setRouteIndex] = useState(0);
   const selected = routes[routeIndex];
   const leg = selected?.legs[0];
+  const [isAltWaysVisible, setAltWaysVisible] = useState(false);
 
   useEffect(() => {
     if (!routesLibrary || !map) return;
@@ -69,24 +71,35 @@ function Directions() {
   if (!leg) return null;
 
   return (
-    <div className="directions">
-      <p>
-        De: {leg.start_address.split(",")[0]} Para:{" "}
-        {leg.end_address.split(",")[0]}
-      </p>
-      <p>Distância: {leg.distance?.text}</p>
-      <p>Duração: {leg.duration?.text}</p>
-
-      <h2>Rotas alternativas:</h2>
-      <ul>
-        {routes.map((route, index) => (
-          <li key={route.summary} className="routes">
-            <button onClick={() => setRouteIndex(index)}>
-              {route.summary}
-            </button>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <div className="directions">
+        <p className="min">{leg.duration?.text}</p>
+        <p className="km">{leg.distance?.text}</p>
+        <Image
+          src="/alt-way.svg"
+          width={25}
+          height={25}
+          alt="alternative way"
+          onClick={() => setAltWaysVisible(!isAltWaysVisible)}
+          className="alt-way-image"
+        />
+      </div>
+      <div
+        className="alt-ways"
+        style={{ display: isAltWaysVisible ? "flex" : "none" }}
+      >
+        <h2>Trajetos alternativos:</h2>
+        <ul>
+          {routes.map((route, index) => (
+            <li key={route.summary} className="routes">
+              <button onClick={() => setRouteIndex(index)}>
+                {route.summary}
+              </button>
+              <p>{route.legs[0].duration?.text}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
   );
 }
